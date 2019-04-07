@@ -1,6 +1,6 @@
 {
   "name": "discord-shine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of typescript utilities to utilize in Discord bots.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
