@@ -17,7 +17,7 @@ discord-shine features the following amenities:
 For basic installation, use:
 
 ```
-npm install discord-shine ==save
+npm install discord-shine --save
 ```
 
 Note: Because this library depends heavily on the [discord.js](https://www.npmjs.com/package/discord.js) and [discord.js-commando](https://www.npmjs.com/package/discord.js-commando) frameworks, please refer to their documentation for optional installations, most notably the voice support.
@@ -47,14 +47,17 @@ class MyBotManager extends BotManager {
 To configure the sound file system, use the following:
 
 ```javascript
-// Assuming soundPath is the path to a folder containing the sound files you want your bot to have access to
+// Assuming soundPath is the path to a folder containing the sound files you
+// want your bot to have access to
 SoundFileManager.initialize(soundPath);
 ```
 
 To make use of the GuildAudioPlayer framework, retrieve the guild's specific player using its id and operate from there:
 
 ```javascript
-// Assuming guild is a Guild object representing the guild you want to play in and voiceChannel is a VoiceChannel object of the voice channel you want to join
+// Assuming guild is a Guild object representing the guild you want to play
+// in and voiceChannel is a VoiceChannel object of the voice channel you want
+// to join
 let player = GuildAudioPlayer.getGuildAudioPlayer(guild.id);
 player.join(voiceChannel);
 
@@ -62,7 +65,8 @@ let sound = SoundFileManager.getFileSound("quack.wav");
 player.add(sound);
 player.play();
 
-// Alternatively, the joinAndPlay flag can be set on the player to allow for quick joining, playing, and leaving
+// Alternatively, the joinAndPlay flag can be set on the player to allow for
+// quick joining, playing, and leaving
 player.joinAndPlay = true;
 player.add(sound);
 ```
