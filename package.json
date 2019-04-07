@@ -1,0 +1,25 @@
+{
+  "name": "discord-shine",
+  "version": "1.0.1",
+  "description": "A collection of typescript utilities to utilize in Discord bots.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js",
+    "discord.js-commando": "github:discordjs/commando"
+  },
+  "devDependencies": {
+    "@types/ws": "^6.0.1",
+    "@types/node": "^10.10.10",
+    "typescript": "^3.4.2"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhantomPhire/discord-shine.git"
+  },
+  "author": "Michael Oltmanns",
+  "license": "MIT"
+}
